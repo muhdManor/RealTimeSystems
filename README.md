@@ -9,6 +9,6 @@ Using the FreeRTOS, run 2 tasks which are to toggle the built in LED with differ
 
 Using the FreeRTOS, run 2 tasks in one core. One read user input to set new LED timings, another one blinks the LED according to the user input in ESP32.
 
-## Example 3 - Memory Management
+## Week_4 - Memory Management
 
 A simple serial input echo program, with optimized memory usage by using vPortFree after every serial input so that the heap memory does not build up and cause memory leak.
