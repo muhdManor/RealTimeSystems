@@ -15,4 +15,4 @@ A simple serial input echo program, with optimized memory usage by using vPortFr
 
 ## Week_5
 
-A queue in a real-time operating system (RTOS) is a kernel object that is capable of passing information between tasks without incurring overwrites from other tasks or entering into a race condition. Using Queues, One task performs basic echo on Serial. If it sees "delay" followed by a number, it sends the number (in a queue) to the second task. If it receives a message in a second queue, it prints it to the console. The second task blinks an LED. When it gets a message from the first queue (number), it updates the blink delay to that number. Whenever the LED blinks 100 times, the second task sends a message to the first task to be printed.
+Using Queues, One task performs basic echo on Serial and sends number (in a queue) to the second task. If it receives a message in a second queue, it prints it to the console. The second task blinks an LED. When it gets a message from the first queue (number), it updates the blink delay to that number. Whenever the LED blinks 100 times, the second task sends a message to the first task to be printed.
