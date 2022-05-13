@@ -36,6 +36,13 @@ Using Semaphores and mutexes, the writing and reading data in a buffer is not di
 Software timers are used to delay the execution of functions or carry out periodic operations. Using software timer, disable the backlight of an LCD (represented by the built in LED on the ESP32) after 5 seconds of inactivity (no input by user).
 
 ## Week9 - Hardware Interrupts
+Sampling, processing, and interface system using hardware interrupts and kernel objects.
+
+-Implement a hardware timer in the ESP32 that samples from an ADC pin once every 100 ms. This sampled data should be copied to a double buffer. When one of the buffers is full, the ISR notify Task A.
+
+-When Task A receives notification from the ISR,wake up and compute the average of the previously collected 10 samples and when finished,update a global floating point variable that contains the newly computed average. 
+
+-Task B should echo any characters received over the serial port back to the same serial port. If the command “avg” is entered, it should display whatever is in the global average variable.
 
 ## Week10 - Deadlock & Starvation
 
