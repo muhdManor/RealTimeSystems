@@ -45,5 +45,9 @@ Sampling, processing, and interface system using hardware interrupts and kernel 
 - Task B should echo any characters received over the serial port back to the same serial port. If the command “avg” is entered, it should display whatever is in the global average variable.
 
 ## Week10 - Deadlock & Starvation
+Solve the dining philosophers problem using the demo code 
 
 ## Week11 - Priority Inversion
+Original code:  Task H is blocked for around 5 seconds waiting for a mutex to be released from Task L. Task M interrupts task L for those 5 seconds, causing unbounded priority inversion.
+
+- Use the critical section guards to prevent the scheduler from interrupting during the critical section in Task H and Task L.
